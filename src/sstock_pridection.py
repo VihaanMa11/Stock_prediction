@@ -1,3 +1,5 @@
+#git push -u origin main 
+#git commit -m "First Commit" 
 # Import necessary libraries
 import numpy as np
 import pandas as pd
@@ -8,12 +10,11 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 # Step 1: Load the stock data
 file_path = "faang_stocks.csv"  # Replace with your dataset path
-data = pd.read_csv(file_path)
+data = pd.read_csv("./database/faang_stocks.csv")
 
-# Step 2: Process the data
 # Convert 'Date' column to datetime and set it as the index
-data['Date'] = pd.to_datetime(data['Date'])
-data.set_index('Date', inplace=True)
+# data['Date'] = pd.to_datetime(data['Date'])
+# data.set_index('Date', inplace=True)
 
 # Calculate daily returns for one stock (e.g., AAPL)
 data['GOOGL_Returns'] = data['GOOGL'].pct_change() * 100

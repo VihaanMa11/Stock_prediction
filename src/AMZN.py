@@ -15,18 +15,18 @@ data = pd.read_csv("./database/faang_stocks.csv")
 # data.set_index('Date', inplace=True)
 
 # Calculate daily returns for a specific stock (e.g., AAPL)
-data['AAPL_Returns'] = data['AAPL'].pct_change() * 100
+data['AMZN_Returns'] = data['AMZN'].pct_change() * 100
 
 # Add moving averages as features
-data['AAPL_MA_5'] = data['AAPL_Returns'].rolling(window=5).mean()
-data['AAPL_MA_10'] = data['AAPL_Returns'].rolling(window=10).mean()
+data['AMZN_MA_5'] = data['AMZN_Returns'].rolling(window=5).mean()
+data['AMZN_MA_10'] = data['AMZN_Returns'].rolling(window=10).mean()
 
 # Drop NaN values created by rolling windows
 data.dropna(inplace=True)
 
 # Define features and target variable
-X = data[['AAPL_MA_5', 'AAPL_MA_10']]  # Predictors
-y = data['AAPL_Returns']  # Target variable
+X = data[['AMZN_MA_5', 'AMZN_MA_10']]  # Predictors
+y = data['AMZN_Returns']  # Target variable
 
 # Split data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, shuffle=False)
@@ -48,7 +48,7 @@ print(f"R-squared (R2): {r2}")
 plt.figure(figsize=(12, 6))
 plt.plot(y_test.values, label="Actual Returns", color="blue")
 plt.plot(y_pred, label="Predicted Returns", color="red", linestyle="dashed")
-plt.title("Actual vs. Predicted Stock Returns (AAPL)")
+plt.title("Actual vs. Predicted Stock Returns (AMZN)")
 plt.xlabel("Time")
 plt.ylabel("Returns (%)")
 plt.legend()
