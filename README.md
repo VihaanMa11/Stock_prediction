@@ -4,16 +4,7 @@ Vihaan Malani  KU2407U587
 Vedant Bhavsar  KU2407U586
 Urviba Chudasama  KU2407U584
 # Objectiveof the project
-1. Understanding Stochastic Processes:
--To model the behavior of systems influenced by random factors.
--To explore the theoretical concepts of probability, randomness, and distributions.
-2. Analyzing Movement Patterns
--To simulate and analyze the movement of particles, individuals, or systems (e.g., diffusion of molecules, stock price movements, animal foraging paths).
-3. Optimizing Processes
--Using simulations to determine patterns or optimize strategies, such as in-network models or resource allocation problems.
-4 . Predicting or Testing Hypotheses
--To predict outcomes based on random processes.
--To test hypotheses related to randomness, such as the likelihood of returning to the origin in a random walk.
+Objective of the project
 # Tools and Libraries Used
 Python
 Library used: 
