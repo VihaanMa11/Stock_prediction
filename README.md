@@ -4,7 +4,34 @@ Vihaan Malani  KU2407U587
 Vedant Bhavsar  KU2407U586
 Urviba Chudasama  KU2407U584
 # Objectiveof the project
-Objective of the project
+Key Objectives
+Data Exploration and Preprocessing:
+
+Gather and preprocess stock market data from reliable sources (e.g., Yahoo Finance, Alpha Vantage).
+Clean the data to handle missing values, remove outliers, and prepare it for analysis.
+Predictive Modeling:
+
+Use machine learning models like Linear Regression, LSTM (Long Short-Term Memory), or other time series analysis techniques (e.g., ARIMA) to predict future stock prices.
+Evaluate model accuracy using appropriate metrics (e.g., RMSE, MAE).
+Visualization of Trends:
+
+Create clear and interactive visualizations to showcase:
+Historical stock price trends.
+Predicted future prices over a specified horizon.
+Key performance indicators (e.g., moving averages, volatility).
+Highlight the divergence between predicted and actual values.
+User-Friendly Analysis:
+
+Develop an intuitive interface for users to:
+Select specific stocks for visualization.
+Adjust prediction parameters (e.g., prediction window).
+Compare multiple stocks side by side.
+Insights for Decision-Making:
+
+Provide actionable insights to support investment decisions:
+Identify trends and patterns.
+Highlight periods of high risk or opportunity.
+
 # Tools and Libraries Used
 Python
 Library used: 
