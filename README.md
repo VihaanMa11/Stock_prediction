@@ -1,7 +1,6 @@
 # Stock Prediction visualization 
 # Group Members
 Vihaan Malani  KU2407U587
-Vedant Bhavsar  KU2407U586
 Urviba Chudasama  KU2407U584
 # Objectiveof the project
 Key Objectives
