@@ -84,3 +84,5 @@ A foundation for future enhancements, such as incorporating live data updates an
 3. Analyzing Results
 4. Handling Visual Studio Code (VS Code)
 5. The process of transferring an entire folder to GitHub using Visual Studio Code (VS Code):
+6. Finding the right dataset on kaggle
+7. cleaning the dataset
